@@ -1,0 +1,3 @@
+package com.nexushr.model;
+import jakarta.persistence.*; import java.time.LocalDateTime;
+@Entity @Table(name="admin_audit_logs") public class AdminAuditLog { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) public Long id; @Column(nullable=false) public String actorEmail; @Column(nullable=false) public String action; @Column(nullable=false) public Long targetUserId; @Column(length=1000) public String details; @Column(nullable=false) public LocalDateTime createdAt=LocalDateTime.now(); public AdminAuditLog(){} public AdminAuditLog(String actor,String action,Long target,String details){this.actorEmail=actor;this.action=action;this.targetUserId=target;this.details=details;} }

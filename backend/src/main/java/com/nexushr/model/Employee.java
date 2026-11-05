@@ -1,0 +1,3 @@
+package com.nexushr.model;
+import jakarta.persistence.*; import java.time.LocalDate;
+@Entity @Table(name="employees") public class Employee { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) public Long id; @Column(unique=true,nullable=false) public String employeeCode; public String name,email,phone,designation; public LocalDate joiningDate; @Enumerated(EnumType.STRING) public EmploymentType employmentType=EmploymentType.FULL_TIME; public Double salary=0.0; @Enumerated(EnumType.STRING) public EmployeeStatus status=EmployeeStatus.ACTIVE; @ManyToOne public Department department; @ManyToOne public Employee manager; public Employee(){} }

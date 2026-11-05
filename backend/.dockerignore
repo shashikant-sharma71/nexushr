@@ -1,0 +1,13 @@
+.git/
+target/
+data/
+.env
+.env.*
+**/.env
+**/.env.*
+*.log
+*.bak
+*.backup
+*.backup-*
+*.pre-security-*
+.DS_Store

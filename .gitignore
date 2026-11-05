@@ -1,0 +1,36 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+!.env.production.example
+*.log
+backend/data/
+backend/target/
+.idea/
+.vscode/
+.DS_Store
+.vercel/
+
+# Local environment files and backups
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.production.example
+**/.env.local.backup-*
+**/*.backup
+
+# Local build and dependency artifacts
+**/node_modules/
+**/target/
+**/dist/
+
+# Timestamped backup files
+**/*.backup-*
+
+# Local pre-security backups (may contain old credentials)
+**/*.pre-security-*
+
+# Backup files
+*.bak
+**/*.bak

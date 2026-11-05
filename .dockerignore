@@ -1,0 +1,25 @@
+.git
+.env
+*.log
+.DS_Store
+__MACOSX
+
+# Environment and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Local backups
+*.backup
+*.backup-*
+*.pre-security-*
+
+# Dependencies and build output
+**/node_modules/
+**/target/
+**/dist/
+
+# Backup files
+*.bak
+**/*.bak

@@ -1,0 +1,1 @@
+package com.nexushr.repo; import com.nexushr.model.LeaveBalance; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface LeaveBalanceRepository extends JpaRepository<LeaveBalance,Long>{}

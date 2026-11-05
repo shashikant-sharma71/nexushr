@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS candidates (
+  id BIGSERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  phone VARCHAR(255),
+  position VARCHAR(255) NOT NULL,
+  status VARCHAR(40) NOT NULL DEFAULT 'APPLIED',
+  source VARCHAR(255),
+  notes VARCHAR(2000),
+  applied_at TIMESTAMP NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_candidates_status ON candidates(status);
+CREATE TABLE IF NOT EXISTS holidays (
+  id BIGSERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  holiday_date DATE NOT NULL UNIQUE,
+  description VARCHAR(255),
+  optional_holiday BOOLEAN NOT NULL DEFAULT FALSE
+);
+CREATE TABLE IF NOT EXISTS announcements (
+  id BIGSERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  message VARCHAR(4000) NOT NULL,
+  audience VARCHAR(30) NOT NULL DEFAULT 'ALL',
+  created_at TIMESTAMP NOT NULL,
+  created_by VARCHAR(190) NOT NULL
+);
