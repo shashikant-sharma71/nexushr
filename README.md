@@ -67,8 +67,7 @@ demo password after evaluation.
   User / Display    User ID / Email                       Role              Password
   name                                                                      
   ----------------- ------------------------------------- ----------------- -----------------
-  NexusHR Platform  `shashikantkumarsharma71@gmail.com`   ADMIN             Hacker0987@#
-  Admin                                                                     
+  NexusHR Platform  `shashikantkumarsharma71@gmail.com`   ADMIN             Hacker0987@#                                                                    
 
   SHASHIKANT SHARMA `shashikantsharma0714@gmail.com`      MANAGER           12345678
 
