@@ -64,7 +64,7 @@ temporary passwords privately with the evaluator, and change any shared
 demo password after evaluation.
 
   -------------------------------------------------------------------------------------------
-  User / Display    User ID / Email                       Role              Password
+  User / Display    User ID / Email       /                Role       /       Password
   name                                                                      
   ----------------- ------------------------------------- ----------------- -----------------
   NexusHR Platform  `shashikantkumarsharma71@gmail.com`   ADMIN             Hacker0987@#                                                                    
@@ -77,7 +77,6 @@ demo password after evaluation.
 
   Nitish Kumar      `nitishkumar@gmail.com`               EMPLOYEE          12345678
 
-  Chandan Kumar     `chandankumar@gmail.com`              EMPLOYEE          12345678
   -------------------------------------------------------------------------------------------
 
 
