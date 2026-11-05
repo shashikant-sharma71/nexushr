@@ -1,10 +1,3 @@
-databases:
-  - name: nexushr-postgres
-    databaseName: nexushr
-    user: nexushr_app
-    plan: basic-256mb
-    region: singapore
-
 services:
   - type: web
     name: nexushr-api
@@ -12,39 +5,33 @@ services:
     rootDir: backend
     dockerfilePath: ./Dockerfile
     dockerContext: .
-    plan: starter
+    plan: free
     region: singapore
     healthCheckPath: /actuator/health
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: prod
-      - key: DB_HOST
-        fromDatabase:
-          name: nexushr-postgres
-          property: host
-      - key: DB_PORT
-        fromDatabase:
-          name: nexushr-postgres
-          property: port
-      - key: DB_NAME
-        fromDatabase:
-          name: nexushr-postgres
-          property: database
+
+      - key: DB_URL
+        sync: false
+
       - key: DB_USERNAME
-        fromDatabase:
-          name: nexushr-postgres
-          property: user
+        sync: false
+
       - key: DB_PASSWORD
-        fromDatabase:
-          name: nexushr-postgres
-          property: password
+        sync: false
+
       - key: JWT_SECRET
         generateValue: true
+
       - key: CORS_ORIGINS
         sync: false
+
       - key: BOOTSTRAP_ADMIN_EMAIL
         sync: false
+
       - key: BOOTSTRAP_ADMIN_PASSWORD
         sync: false
+
       - key: BOOTSTRAP_ADMIN_NAME
         value: NexusHR Platform Admin
