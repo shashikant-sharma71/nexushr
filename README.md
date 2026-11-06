@@ -55,7 +55,7 @@ notifications.
   Managed database                    Neon PostgreSQL
   -----------------------------------------------------------------------
 
-## 2. Demo access
+## 2. Demo access on Live server
 
 The following are the demonstration accounts configured in the hosted
 internship workspace. Passwords are deliberately **not published in this
@@ -67,8 +67,8 @@ demo password after evaluation.
   User / Display    User ID / Email       /                Role       /       Password
   name                                                                      
   ----------------- ------------------------------------- ----------------- -----------------
-  NexusHR Platform  `shashikantkumarsharma71@gmail.com`   ADMIN             Hacker0987@#                                                                    
-
+  NexusHR Platform  `shashikantkumarsharma71@gmail.com`   ADMIN            Hacker0987@#
+  
   SHASHIKANT SHARMA `shashikantsharma0714@gmail.com`      MANAGER           12345678
 
   Juhi Sharma       `juhi.hr.test@gmail.com`              HR                12345678
@@ -79,7 +79,25 @@ demo password after evaluation.
 
   -------------------------------------------------------------------------------------------
 
+## 2. Demo access on Local Server
 
+The following are the demonstration accounts configured in the hosted
+internship workspace. Passwords are deliberately **not published in this
+README** because the hosted application is publicly reachable. Share
+temporary passwords privately with the evaluator, and change any shared
+demo password after evaluation.
+
+  -------------------------------------------------------------------------------------------
+  User / Display           User ID / Email       /                Role       /       Password
+  name                                                                      
+  ----------------- -------------------------------------      ----------------- -----------------
+  ADMIN	                    admin@nexushr.local	                  Admin             Admin@123
+  HR	                    hr@nexushr.local	                  Hr                Hr@12345
+  MANAGER	                manager@nexushr.local	              Manager           Manager@123
+  EMPLOYEE	                employee@nexushr.local	              Employee          Employee@123
+
+  -------------------------------------------------------------------------------------------
+Role	Email / User ID	Password
 
 ## 3. Roles and access model
 
