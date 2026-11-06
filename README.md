@@ -91,10 +91,10 @@ demo password after evaluation.
   User / Display           User ID / Email       /                Role       /       Password
   name                                                                      
   ----------------- -------------------------------------      ----------------- -----------------
-  ADMIN	       :-         user:-     admin@nexushr.local	              / Password :-       Admin@123
-  HR	          :-       user:-   hr@nexushr.local	                      / Password :-       Hr@12345
-  MANAGER	      :-        user:-   manager@nexushr.local	                  / Password :-     Manager@123
-  EMPLOYEE	     :-        user:-     employee@nexushr.local	              /  Password :-       Employee@123
+  ADMIN	       :-         user:-     admin@nexushr.local	               Password :-       Admin@123
+  / HR	          :-       user:-   hr@nexushr.local	                       Password :-       Hr@12345
+ /  MANAGER	      :-        user:-   manager@nexushr.local	                   Password :-     Manager@123
+ /  EMPLOYEE	     :-        user:-     employee@nexushr.local	                Password :-       Employee@123
 
   -------------------------------------------------------------------------------------------
 
